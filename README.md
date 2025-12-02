@@ -1,4 +1,4 @@
-# 15 Days Frontend Coding Journey
+# 10 Days Frontend Coding Journey
 
 ## 🚀 Day 1 — Music Player UI
 
