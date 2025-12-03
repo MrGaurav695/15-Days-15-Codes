@@ -35,3 +35,8 @@
 - Tech: HTML, CSS, JavaScript, Dictionary API
 - Features: Word search input, meaning + example display, synonyms & antonyms list, part-of-speech label, source link, responsive card UI, clean theme using CSS variables
 - Folder: Day6/
+
+## 🚀 Day 7 — Recipe Finder Web App
+- Tech: HTML, CSS, JavaScript, TheMealDB API
+- Features: Recipe search, random recipe generator, ingredients list, cooking instructions, category & area tags, YouTube tutorial link, modal view, responsive recipe grid
+- Folder: Day7/
