@@ -65,3 +65,9 @@
 - Tech: HTML, CSS, JavaScript
 - Features: Job search, location filter, job categories, job cards with company logos, role & description view, sidebar navigation, filters (time, experience, job type, location), responsive layout, hover effects, clean professional UI
 - Folder: Day11/
+
+## 🚀 Day 12 — Online Educational Landing Page
+
+- Tech: HTML, CSS
+- Features: Modern hero section, clean navigation bar, course cards with pricing, discounts & authors, search bar, student comments section, weekly podcast cards, blog article grid, responsive layout, hover animations, organized content sections, structured footer with social links, professional UI design
+- Folder: Day12/
