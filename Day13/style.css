@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --primary: #6c63ff;
+    --primary-dark: #5d54e6;
+    --bg-light: #f4f2ff;
+    --text-dark: #2e2b4f;
+    --text-light: #b5b3c9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background: var(--bg-light);
+}
+
+.left-section{
+    background: #ffffff;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 25px 10px;
+    transition: all 0.3s ease;
+}
+
+.left-section h2{
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.left-section .sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-section .sidebar .item,
+.left-section .sign-out{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.left-section .sidebar .item.active h3,
+.left-section .sidebar .item.active i,
+.left-section .sidebar .item:hover,
+.left-section .sign-out:hover{
+    color: var(--primary);
+}
+
+.left-section .sidebar .item h3,
+.left-section .sign-out h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.left-section .sidebar .item i,
+.left-section .sign-out i{
+    font-size: 22px;
+}
+
+.main{
+    flex: 6;
+    padding: 25px;
+}
+
+.main .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .header .search{
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.18);
+}
+
+.main .header .search button{
+    font-size: 20px;
+    border: none;
+    background: transparent;
+}
+
+.main .header .search input{
+    padding: 4px 6px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.main .header .search i{
+    cursor: pointer;
+}
+
+.main .header .icon-btns{
+    display: flex;
+    gap: 8px;
+}
+
+.main .header .icon-btns i{
+    font-size: 20px;
+    background: var(--primary);
+    padding: 8px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main .header .icon-btns i:hover{
+    background: var(--primary-dark);
+}
+
+.main .header .icon-btns i#menu-btn{
+    display: none;
+}
+
+.main .separator{
+    margin: 35px 0 20px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.main .quick-access{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.main .quick-access .item{
+    background: #ffffff;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.18);
+}
+
+.main .quick-access .item:hover{
+    border-color: var(--primary);
+}
+
+.main .quick-access .item i{
+    font-size: 46px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+/* Icon Colors */
+.main .quick-access .item:nth-child(1) i{
+   color: #6c63ff; 
+   background: #edeaff;
+}
+
+.main .quick-access .item:nth-child(2) i{
+    color: #4e8cff; 
+    background: #e7f0ff;
+}
+
+.main .quick-access .item:nth-child(3) i{
+    color: #ffc93c; 
+    background: #fff6da;
+}
+
+.main .quick-access .item:nth-child(4) i{
+    color: #47d982; 
+    background: #e6ffed;
+}
+
+.main .quick-access .item h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin: 15px 0 8px;
+}
+
+.main .quick-access .item p{
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.main table{
+    background: #ffffff;
+    padding: 15px;
+    width: 100%;
+    border-radius: 14px;
+    border-spacing: 0 8px;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.18);
+}
+
+.main table tbody tr{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main table tbody tr.selected,
+.main table tbody tr:hover{
+    background: #ebe9ff;
+}
+
+.main table tbody tr td{
+    padding: 16px;
+}
+
+.main table tbody tr td.icon i{
+    font-size: 20px;
+    background: #edeaff;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.main table tbody tr td.name{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.main table tbody tr td.extension,
+.main table tbody tr td.size{
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.right-section{
+    flex: 2;
+    padding: 25px 25px 15px 10px;
+}
+
+.right-section .profile{
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.18);
+}
+
+.right-section .profile .info{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.right-section .profile .info img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right-section .profile .info .account h5{
+    font-size: 15px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+.right-section .profile .info .account p{
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.right-section .profile > i{
+    font-size: 24px;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.right-section .widgets{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section .widgets .disk{
+    background: #ffffff;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    padding: 0 25px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.18);
+}
+
+.right-section .widgets .disk .progress{
+    display: flex;
+    justify-content: center;
+}
+
+.right-section .widgets .disk .progress .progress-bar{
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(closest-side, #fff 79%, transparent 80% 100%), 
+    conic-gradient(var(--primary) 25%, #e9e4ff 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.right-section .widgets .disk .progress .progress-bar::before{
+    content: "25%";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.right-section .widgets .disk .progress .progress-bar::after{
+    content: "used";
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.right-section .widgets .disk .info h5{
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.right-section .widgets .disk h5 span{
+    color: var(--text-dark);
+}
+
+.right-section .widgets .disk .info p{
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.right-section .widgets .bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section .widgets .bottom button{
+    border: none;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    margin: 30px 0;
+    font-size: 20px;
+    padding: 14px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.right-section .widgets .bottom button:hover{
+    background: var(--primary-dark);
+}
+
+.right-section .widgets .bottom .premium{
+    background: #ffffff;
+    padding: 25px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.18);
+    transition: all 0.3s ease;
+}
+
+.right-section .widgets .bottom .premium:hover{
+    border-color: var(--primary);
+}
+
+.right-section .widgets .bottom .premium .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-section .widgets .bottom .premium .title h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.right-section .widgets .bottom .premium .title i{
+    font-size: 30px;
+    padding: 10px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 14px;
+}
+
+.right-section .widgets .bottom .premium p{
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+@media screen and (max-width: 1230px) {
+    
+    .left-section{
+        width: 90px;
+    }
+
+    .left-section h2{
+        font-size: 17px;
+    }
+
+    .left-section .sidebar .item{
+        justify-content: center;
+    }
+
+    .left-section .sidebar .item h3,
+    .left-section .sign-out h3{
+        display: none;
+    }
+
+    .left-section .sidebar .item i,
+    .left-section .sign-out i{
+        font-size: 26px;
+    }
+
+    .main .quick-access{
+        justify-content: space-between;
+    }
+
+    .main .quick-access .item{
+        width: 23%;
+    }
+
+    .main .quick-access .item i{
+        font-size: 36px;
+    }
+
+    .main .quick-access .item h5{
+        font-size: 16px;
+    }
+
+    .main .quick-access .item p,
+    .right-section .profile .info .account p{
+        font-size: 12px;
+    }
+
+    .right-section .widgets .disk{
+        height: 270px;
+    }
+
+    .right-section .widgets .disk .progress .progress-bar{
+        width: 120px;
+        height: 120px;
+    }
+
+    .right-section .widgets .disk .info h5{
+        font-size: 18px;
+    }
+
+    .right-section .widgets .bottom button{
+        font-size: 17px;
+        padding: 12px;
+    }
+
+    .right-section .widgets .bottom .premium .title h5{
+        font-size: 17px;
+    }
+
+    .right-section .widgets .bottom .premium .title i{
+        font-size: 26px;
+    }
+
+    .right-section .widgets .bottom .premium p{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    .left-section{
+        position: absolute;
+        width: 160px;
+        left: -160px;
+        z-index: 1000;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-section .sidebar .item{
+        justify-content: start;
+    }
+
+    .left-section .sidebar .item h3,
+    .left-section .sign-out h3{
+        display: block;
+    }
+
+    .left-section .sidebar .item i,
+    .left-section .sign-out i{
+        font-size: 22px;
+    }
+
+    .main,
+    .right-section{
+        padding: 15px;
+    }
+
+    .main .header{
+        gap: 10px;
+    }
+
+    .main .header .icon-btns i#menu-btn{
+        display: block;
+    }
+
+    .main .quick-access .item p{
+        text-align: center;
+    }
+
+    .main table tbody tr td.name,
+    .main table tbody tr td.extension,
+    .main table tbody tr td.size{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    body{
+        flex-direction: column;
+    }
+
+    .main{
+        padding: 26px 15px 0;
+    }
+
+    .main .header{
+        justify-content: start;
+    }
+
+    .main .header .search{
+        width: 30%;
+    }
+
+    .right-section .profile{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .right-section .widgets{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .right-section .widgets .disk{
+        width: 48%;
+    }
+
+    .right-section .widgets .bottom{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .right-section .widgets .bottom button{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    .main{
+        padding: 100px 15px 0;
+    }
+
+    .main .header .search{
+        width: 68%;
+    }
+
+    .right-section .profile{
+        width: 94%;
+    }
+
+    .right-section .widgets .disk .info h5{
+        font-size: 14px;
+    }
+
+    .right-section .widgets .disk .info p{
+        font-size: 13px;
+    }
+
+}
+
+
+
