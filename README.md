@@ -77,3 +77,9 @@
 - Tech: HTML, CSS, JavaScript
 - Features: Sidebar navigation with icons, responsive search bar with filters, quick-access cards, recent files table with hover states, user profile dropdown, circular storage progress indicator (conic gradient), upload button + premium upgrade box, clean SaaS-style UI, smooth animations, fully responsive dashboard layout
 - Folder: Day13/
+
+## 🚀 Day 14 — Coding Learning Platform UI
+
+- Tech: HTML, CSS, JavaScript
+- Features: Hero section with dotted background, headline/subheading, CTA buttons, and a centered search bar. Popular courses displayed in colorful responsive cards with hover effects. Clean typography, polished spacing, and fully responsive layout for a smooth learning platform UI.
+- Folder: Day14/
