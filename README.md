@@ -90,4 +90,5 @@
 - Features: Three-panel dashboard layout with sidebar navigation, search header, and a dynamic video banner. Auto-play videos on hover, category filters, and discover section with responsive video cards. Right sidebar includes profile panel, playlist preview, current player, and weekly popular videos. Smooth transitions, modern shadows, clean spacing, and fully responsive design for a real media-platform experience.
 - Folder: Day15/
 
-  ##### Thanks for following my 15-day journey — more exciting projects coming soon! #####
+--
+## Thanks for following my 15-day journey — more exciting projects coming soon! 
